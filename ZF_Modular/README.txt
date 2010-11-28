@@ -17,6 +17,9 @@ application folder with the one from this download. Then add "My" folder
 under library to the library folder in your file structure. Then update
 the public/index.php. Make sure ZF is in your include_path.
 
+* to prevent double routing, it's important to modify 
+Zend_Controller_Front::dispatch() method. Read my blog post about it.
+
 WARNING:
 If you use it, please test it for your application and make sure 
 it works the way it's supposed to. Use it at your own risk. If you 
